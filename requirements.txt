@@ -1,0 +1,9 @@
+streamlit
+urllib3==1.26.6
+watchdog
+notebook
+holidays
+scikit-learn
+matplotlib
+xgboost
+plotly

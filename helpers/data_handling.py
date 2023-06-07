@@ -15,3 +15,15 @@ def load_country_data(country_code):
     df = df.dropna()
 
     return df
+
+def load_multiple_countries(country_codes):
+
+    dfs = []
+
+    for country_code in country_codes:
+        df = load_country_data(country_code)
+        df['country'] = country_code
+        dfs.append(df)
+
+    return pd.concat(dfs, ignore_index=True)
+

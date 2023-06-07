@@ -1,11 +1,8 @@
 import pandas as pd
-import numpy as np
-import math
 
 STUDY_START_DATE = pd.Timestamp("2015-01-01 00:00", tz="utc")
 STUDY_END_DATE = pd.Timestamp("2020-01-31 23:00", tz="utc")
-DATA_PATH = "//data/western-europe/"
-
+DATA_PATH = "data/western-europe/"
 
 def load_country_data(country_code):
     df = pd.read_csv(DATA_PATH + country_code + ".csv")
